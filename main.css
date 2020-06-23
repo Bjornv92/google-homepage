@@ -1,9 +1,25 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 20vh;
+}
+
 input {
     border: none;
+    width: 90%;
 }
 
 input:focus {
     outline: none;
+    padding-left: 5px;
+}
+
+.search-bar:focus-within {
+    box-shadow: 2px 2px 10px #888;
 }
 
 .search-bar {
@@ -11,4 +27,65 @@ input:focus {
     width: 500px;
     padding: 10px;
     border-radius: 50px;
+    margin: 35px auto;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.button {
+    padding: 15px 20px;
+    margin: 0 5px;
+    background-color: #efefef;
+    border: 1px solid #efefef;;
+}
+
+.button:hover {
+    border: 1px solid #aaa;
+}
+
+.top-nav {
+    margin-top: 25px;
+}
+
+.nav-left, .nav-right {
+    display: inline-block;
+}
+
+.nav-left {
+    margin-left: 20px;
+}
+
+.nav-right {
+    float: right;
+    margin-right: 20px;
+}
+
+.top-nav a, .bottom-nav a {
+    color: #111;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0px 10px
+}
+
+.top-nav a:hover, .bottom-nav a:hover {
+    text-decoration: underline;
+}
+
+.top-nav button {
+    background-color: #4c8bf5;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+}
+
+.bottom-nav {
+    padding-top: 200px;
+}
+
+.bottom-nav a {
+    color: #444;
 }
